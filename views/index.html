@@ -1,0 +1,13 @@
+<html>
+  <head></head>
+  <body>
+    <div class="list">
+      {{range .todos}}{{template "partials/todo" .}}{{end}}
+    </div>
+    <div class="controls">
+      <input id="title" name="title" />
+      <button id="add">add</button>
+    </div>
+  </body>
+  <script src="/static/script.js"></script>
+</html>
